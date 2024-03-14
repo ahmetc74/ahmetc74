@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Web yayıncılığı araçları rehberiniz, modern web teknolojileri ve tasarım ipuçları ile size kapsamlı bir kaynak sunar.">
+    <meta name="keywords" content="web yayıncılığı, web tasarım, web teknolojileri, web geliştirme rehberi">
+    <meta property="og:title" content="Web Yayıncılığı Araçları Rehberi">
+    <meta property="og:description" content="Web yayıncılığı araçları rehberiniz, modern web teknolojileri ve tasarım ipuçları ile size kapsamlı bir kaynak sunar.">
+    <meta property="og:image" content="https://acetin.com.tr/logo_og.png">
+    <meta property="og:url" content="https://acetin.com.tr">
+    <meta property="og:type" content="website">
+    <title>Web Yayıncılığı Araçları Rehberi</title>
+<head>
+    <!-- Diğer <head> içeriği -->
+   
+</head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer defer">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous defer">
+   
+     
+   
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Web Yayıncılığı Araçları Rehberi",
+  "description": "Web yayıncılığı araçları rehberiniz, modern web teknolojileri ve tasarım ipuçları ile size kapsamlı bir kaynak sunar.",
+  "url": "https://acetin.com.tr",
+  "image": "https://acetin.com.tr/logo_og.png"
+}
+</script>
+
+
+    <style>
+     
+.youtube-thumbnail {
+    width: 100%;
+    height: 100%;
+    display: block; /* Tam genişlikte resim olmasını sağlamak için */
+}
+
+.youtube-play-button {
+    display: block;
+    width: 50%; /* Düğme genişliği */
+    height: 50%; /* Düğme yüksekliği */
+    background: url('play-button-image.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 1; /* Saydamlığı kaldır */
+}
+
+
+ #main-title,
+   .footer {
+    border-radius: 10px;
+    text-align: center
+   }
+
+   #main-title,
+   .baslik-div,
+   .figure-caption,
+   .footer {
+    text-align: center
+   }
+
+   .baslik,
+   .baslik-div,
+   .card,
+   .card-body,
+   .card-body1 {
+    display: flex
+   }
+
+   tooltip {
+    font-weight: 700;
+    font-style: italic
+   }
+
+   .card {
+    flex-direction: column;
+    height: 100%
+   }
+
+   .card-body {
+    flex: 1;
+    flex-direction: column;
+    padding: 20px
+   }
+
+   .card-body>:last-child {
+    margin-top: auto
+   }
+
+   .card-body1 {
+    flex: 1;
+    flex-direction: column;
+    padding: 70px;
+    justify-content: space-between;
+    align-items: center
+   }
+
+   #main-title,
+   .card-header,
+   .card-header1 {
+    color: #fff;
+    padding: 20px
+   }
+
+   .card-header {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    font-size: 1.5em
+   }
+
+   .card-header1 {
+    background: linear-gradient(135deg, #6dd5ed 25%, #2193b0 75%);
+    font-size: 1.25em
+   }
+
+   .footer {
+    background-color: #2c3e50;
+    color: #f39c12;
+    padding: 5px 0;
+    margin: 5px auto;
+    width: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2)
+		text-align: center
+   }
+
+   .footer a,
+   .social-icon {
+    color: #f39c12;
+    transition: color .2s ease-in-out
+   }
+
+   #main-title,
+   .kayan-yazi-bar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2)
+   }
+
+   .footer h2,
+   .footer p {
+    margin-bottom: 10px
+   }
+
+   .footer a:hover,
+   .social-icon:hover {
+    color: #fff
+   }
+
+   .social-icon {
+    font-size: 24px;
+    margin: 0 10px
+   }
+
+   #main-title {
+    font-size: 2.5rem;
+    background-color: #0056b3
+   }
+
+   .card-text {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem
+
+   }
+
+   .card-body ul {
+    padding-left: 1.5rem;
+    list-style-type: disc
+   }
+
+   .card-body li {
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    line-height: 1.5
+   }
+
+   .fa-icon {
+    color: #0056b3;
+    margin-right: .5rem
+   }
+
+   .card-title {
+    font-size: 1.75rem;
+    color: #0056b3;
+    margin-bottom: 1.5rem
+   }
+
+   .card-img-top {
+    cursor: pointer;
+    transition: transform .3s
+   }
+
+   .card-img-top:hover {
+    transform: scale(1.05)
+   }
+
+   .figure-caption {
+    width: 100%
+   }
+
+#main-title {
+  font-size: 2.5rem;
+  background-color: #0056b3;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card-body ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.card-body li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.fa-icon {
+  color: #0056b3;
+  margin-right: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  color: #0056b3;
+  margin-bottom: 1.5rem;
+}
+
+      .kayan-yazi-bar {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, .1);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: width .5s, right .5s, opacity .5s;
+        height: 45px;
+        z-index: 2000;
+        border-radius: 25px;
+        border: 2px solid rgba(255, 255, 255, .2)
+      }
+
+      .kayan-yazi-bar::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(60deg, rgba(255, 255, 255, .1) 50%, transparent 50%);
+        background-size: 25px 25px;
+        animation: 8s linear infinite shine;
+        opacity: .5;
+        pointer-events: none
+      }
+
+      @keyframes shine {
+        from {
+          transform: rotate(0) translate(-50%, -50%)
+        }
+
+        to {
+          transform: rotate(360deg) translate(-50%, -50%)
+        }
+      }
+
+      #toggleIcon {
+        cursor: pointer;
+        color: red;
+        position: absolute;
+        top: center;
+        right: 10px;
+        opacity: .3;
+        z-index: 1051
+      }
+
+      .kayan-yazi-container {
+        white-space: nowrap;
+        animation: 25s linear infinite kaydir;
+        direction: rtl
+      }
+
+      .kayan-yazi {
+        font-size: 25px;
+        margin: 75px;
+        color: #000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .5)
+      }
+
+      @keyframes kaydir {
+        10% {
+          transform: translateX(0)
+        }
+
+        100% {
+          transform: translateX(-100%)
+        }
+      }
+
+      @keyframes gradientAnimation {
+
+        0%,
+        100% {
+          background-position: 0 50%
+        }
+
+        50% {
+          background-position: 100% 50%
+        }
+      }
+
+      .kullanici-bilgisi {
+        color: red
+      }
+
+      .card1 {
+        background-size: cover;
+        background-position: center;
+        min-height: auto;
+        position: relative
+      }
+
+      .form-control {
+        height: auto;
+        padding: .375rem .75rem
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%
+      }
+
+      .modal-content .form-control {
+        width: 100%;
+        margin-bottom: 10px
+      }
+
+      .modal-content form {
+        max-width: 100%
+      }
+
+      .responsive-media {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9
+      }
+
+    .baslik-div {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Dikiy ortalama için eklendi */
+}
+
+
+ .baslik {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.baslik-div h2 {
+  color: white;
+line-height: 1.5;
+}
+
+
+
+      @media (max-width:768px) {
+        .footer {
+          width: 95%;
+          margin: 20px auto
+        }
+
+        #kayanYaziBar #toggleIcon {
+          font-size: 16px
+        }
+
+        .modal-content {
+          width: 80%
+        }
+
+        .card1 {
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat
+        }
+
+    /* .responsive-media img {
+    max-width: 100%;
+    height: auto;
+}*/
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+  <div class="container mt-5">
+   <div class="row mb-4">
+    <div class="col">
+     <div class="card">
+      <div class="card-body">
+       <h2 id="main-title" class="baslik">
+        Web Yayıncılığı Araçları Rehberi
+       </h2>
+      </div>
+     </div>
+    </div>
+   </div>
+      <div class="card mb-3">
+    <div class="card1">
+        <div class="responsive-media" style="text-align:center;margin-top:20px">
+            <a href="ekampus.webp" target="_blank">
+                <img src="ekampus_1200x548.webp" 
+                     srcset="ekampus_1_50.webp 480w,
+                             ekampus_1200x548.webp 1200w"
+                     sizes="(max-width: 768px) 480px,
+                            1200px"
+                     alt="Ekampus Resmi" 
+                     title="Can Hoca ile Canlı Ders Etkinliğinden bir paylaşım.. Resmi büyütmek için tıklayın" 
+                     style="max-width:100%;height:auto">
+            </a>
+        </div>
+   <div id="kayanYaziBar" class="kayan-yazi-bar">
+          <i id="toggleIcon" class="fa-solid fa-toggle-on fa-2x" style="color:#00f"></i>
+        </div>
+
+    </div>
+   
+
+     
+        <div class="row mt-3">
+     <div class="col">
+                <p>
+                  <a href="#formKismi">Mesajınızı Kayan Yazı Alanına Eklemek İçin Buraya Tıklayın</a>
+                </p>
+              </div>
+            </div>        </div>
+     
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-title">Web Yayıncılığı Araçları dersimiz için Can Güler hocamızın istediği dinamik, tek sayfa Site tasarlamak için bu rehber size yardımcı olacaktır.</p>
+              <h3 class="sub-heading">Gereklilikler:</h3>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fas fa-code fa-icon"></i>
+                  </span>HTML kodları bilgisi
+                </li>
+                <li>
+                  <span class="fa-li">
+                    <i class="fas fa-edit fa-icon"></i>
+                  </span>HTML editörü
+                </li>
+              </ul>
+              <h2 class="card-title">HTML Editörleri</h2>
+              <p class="card-text">HTML kodlarını yazmak ve düzenlemek için bir HTML editörüne ihtiyacınız olacak. Kitapta bahsedilen bazı popüler editörler şunlardır:</p>
+              <ul>
+                <li>
+                  <a href="https://notepad-plus-plus.org/downloads/" target="_blank">Notepad++</a>: Ücretsiz ve açık kaynak kodlu bir editör.
+                </li>
+                <li>
+                  <a href="https://atom.io/" target="_blank">Atom</a>: Ücretsiz ve açık kaynak kodlu, modern bir editör.
+                </li>
+                <li>
+                  <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>: Ücretli, ancak birçok gelişmiş özelliğe sahip bir editör.
+                </li>
+                <li>
+                  <a href="https://www.adobe.com/tr/products/dreamweaver.html" target="_blank">Dreamweaver</a>: Adobe tarafından geliştirilen ücretli bir editör.
+                </li>
+                <li>
+                  <a href="http://bluefish.openoffice.nl/" target="_blank">Bluefish</a>: Ücretsiz ve açık kaynak kodlu, güçlü bir editör.
+                </li>
+                <li>
+                  <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>: Microsoft tarafından geliştirilen, genişletilebilir ve ücretsiz bir kod editörü.
+                </li>
+              </ul>
+              <h3 class="card-title">Sizin Kullanabileceğiniz Diğer Editörler</h3>
+              <ul>
+                <li>
+                  <a href="https://www.jetbrains.com/phpstorm/" target="_blank">Jetbrains PhP Storm</a>: Öğrenci, öğretmen ve kurumlar için ücretsiz. Form doldurarak edinebilirsiniz.
+                </li>
+                <li>
+                  <a href="http://brackets.io/" target="_blank">Brackets</a>: Adobe tarafından geliştirilen ücretsiz bir editör.
+                </li>
+                <li>
+                  <a href="https://netbeans.apache.org/" target="_blank">Apache Netbeans</a>: Ücretsiz ve açık kaynak kodlu bir editör.
+                </li>
+                <li>
+                  <a href="https://notepad-plus-plus.org/downloads/" target="_blank">Notepad++</a>: Yukarıda bahsedildiği gibi.
+                </li>
+              </ul>
+              <h3 class="card-title">Online HTML Editörleri</h3>
+              <p class="card-text">İnternet bağlantınız varsa, kurulum gerektirmeyen online HTML editörlerini de kullanabilirsiniz. Bazı popüler online editörler şunlardır:</p>
+              <ul>
+                <li>
+                  <a href="https://phcode.dev/" target="_blank">Phoenix</a>: Kullanımı kolay bir online editör.
+                </li>
+                <li>
+                  <a href="https://www.tiny.cloud/" target="_blank">TinyMCE</a>: WYSIWYG (What You See Is What You Get) editör.
+                </li>
+                <li>
+                  <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>: JavaScript ve HTML kodlarını test etmek için ideal bir online editör.
+                </li>
+              </ul>
+              <h2 class="card-title">W3Schools</h2>
+              <p class="card-text">HTML, CSS ve JavaScript gibi web programlama dilleri hakkında bilgi edinmek için <a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a>’u kullanabilirsiniz. W3Schools, interaktif alıştırmalar ve örnekler içeren ücretsiz bir web sitesidir. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div class="card border-success">
+            <div class="card-body">
+              <h2>Ekampüs Canlı Ders Etkinliğinde Anlatılan Temel HTML Kodları</h2>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">1. Temel Yapı</button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table">
+                        <tr>
+                          <td>&lt;!DOCTYPE html&gt;</td>
+                          <td>(HTML belgesinin başlangıcı)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;html&gt;</td>
+                          <td>(HTML belgesinin HTML kısmının başlangıcı)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;head&gt;</td>
+                          <td>(Belgenin başlık ve meta verileri içeren kısmı)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;title&gt;</td>
+                          <td>(Belgenin başlığı)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;meta charset="UTF-8"&gt;</td>
+                          <td>(Karakter kodlaması)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;/head&gt;</td>
+                          <td>(Belgenin başlık ve meta verileri içeren kısmının sonu)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;body&gt;</td>
+                          <td>(Belgenin gövde kısmı)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;h1&gt;</td>
+                          <td>(Başlıklar, büyükten küçüğe)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;p&gt;</td>
+                          <td>(Paragraf)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;img src="resim_adi.jpg" alt="Resim"&gt;</td>
+                          <td>(Resim ekleme)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;a href="link.html"&gt;</td>
+                          <td>(Link ekleme)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;/body&gt;</td>
+                          <td>(Belgenin gövde kısmının sonu)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;/html&gt;</td>
+                          <td>(HTML belgesinin sonu)</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2. Metin Biçimlendirme</button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table">
+                        <tr>
+                          <td>&lt;strong&gt;</td>
+                          <td>(Metni kalınlaştırır)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;em&gt;</td>
+                          <td>(Metni italik yapar)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;br&gt;</td>
+                          <td>(Satır sonu ekler)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;hr&gt;</td>
+                          <td>(Yatay çizgi ekler)</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3. Listeler</button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table">
+                        <tr>
+                          <td>&lt;ul&gt;</td>
+                          <td>(Sırasız liste)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;li&gt;</td>
+                          <td>(Liste öğesi)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;/ul&gt;</td>
+                          <td>(Sırasız liste sonu)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;ol&gt;</td>
+                          <td>(Sıralı liste)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;li&gt;</td>
+                          <td>(Liste öğesi)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;/ol&gt;</td>
+                          <td>(Sıralı liste sonu)</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">4. Tablolar</button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table">
+                        <tr>
+                          <td>&lt;table&gt;</td>
+                          <td>(Tablo başlangıcı)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;tr&gt;</td>
+                          <td>(Tablo satırı)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;th&gt;</td>
+                          <td>(Başlık hücresi)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;td&gt;</td>
+                          <td>(Veri hücresi)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;/tr&gt;</td>
+                          <td>(Tablo satırı sonu)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;/table&gt;</td>
+                          <td>(Tablo sonu)</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">5. Formlar</button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <table class="table">
+                        <tr>
+                          <td>&lt;form&gt;</td>
+                          <td>(Form başlangıcı)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;input type="text"&gt;</td>
+                          <td>(Metin girişi)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;input type="submit"&gt;</td>
+                          <td>(Gönder düğmesi)</td>
+                        </tr>
+                        <tr>
+                          <td>&lt;/form&gt;</td>
+                          <td>(Form sonu)</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3>Erdem Erdoğdu Hocamız ile Yapılan Projeler</h3>
+              <a href="ders.jpg" target="_blank">
+                <img class="responsive-media" src="ders_560x315.webp" alt="Erdem Hoca İle E-Kampüs" title="Erdem Hoca ile Canlı Ders Etkinliğinden bir paylaşım.. Resmi büyütmek için tıklayın">
+              </a>
+              <p>
+                <i class="fas fa-code"></i>
+                <a href="http://ahmetc.byethost15.com/index.php" target="_blank">Projemiz 1</a>- Web tasarım ve kodlama projesi.
+              </p>
+              <p>Projenin temel konusu, ücretsiz hosting ve alan adı sağlayan servislerden birini kullanarak, basit bir web sayfası geliştirmektir. Sayfamız, bu proje kapsamında geliştirilen örnek bir uygulamadır.</p>
+              <p>
+                <i class="fa-brands fa-wordpress-simple"></i>
+                <a href="https://ahmetccom.wordpress.com/" target="_blank">Projemiz 2</a>- WordPress üzerine kurulu bir blog sayfası.
+              </p>
+              <p>
+                <i class="fas fa-user-tie"></i>Akademik profil: <a href="https://avesis.anadolu.edu.tr/erdeme" target="_blank">Erdem Erdoğdu</a>
+              </p>
+            </div>
+          </div>
+        </div>
+<div class="col-md-6">
+    <div class="card h-100">
+        <div class="card-body">
+            <h3>Üretim Takip Sistemi Projesi</h3>
+            <!-- YouTube küçük resmi ve oynatma simgesi ile video başlatıcı -->
+            <div class="youtube-container" data-id="qTHn5DQb5Qw">
+                <img class="youtube-thumbnail" src="https://img.youtube.com/vi/qTHn5DQb5Qw/hqdefault.jpg" alt="Üretim Takip Sistemi Projesi">
+                <div class="youtube-play-button"></div>
+            </div>
+
+            <p>Üretim süreçlerinin verimliliğini artırmak için PHP, MySQL ve JavaScript kullanarak geliştirmeye çalıştığım Üretim Takip Sistemi. İlgi ve Desteği için <strong>Mehmet Fırat</strong> hocama sonsuz teşekkürler.</p>
+            <p><i class="fa-brands fa-webflow"></i>&nbsp;<a href="https://www.youtube.com/watch?v=qTHn5DQb5Qw" target="_blank">Projemiz 3</a> - YouTube'da bir eğitim videosu.</p>
+            <p><i class="fas fa-user-tie"></i> Akademik profil: <a href="https://avesis.anadolu.edu.tr/mfirat" target="_blank">Mehmet Fırat</a></p>
+        </div>
+    </div>
+</div>
+
+
+      <div class="row mt-3">
+        <div class="col">
+          <div class="card">
+            <div class="card-header1">
+              <h2 id="main-title" class="baslik">HTML Kodlarının Gösterimi</h2>
+            </div>
+            <div class="card-body1">
+              <p class="card-text">Projemiz kapsamında kullanılan HTML kodlarının detaylı görünümü. Kodları incelemek ve web sayfamızın nasıl oluşturulduğunu öğrenmek için aşağıdaki bağlantıya tıklayın.</p>
+              <a href="kod_kacis.html" target="_blank" class="btn btn-primary">Kodları Görüntüle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="row mt-3">
+        <div class="col">
+          <div class="card">
+            <div class="card-header1">  
+   <h2 id="main-title" class="baslik">Yorumlar</h2>
+         </div>
+         <div class="card-body1">
+        <p class="card-text text-center">Bu alanda düşüncelerinizi paylaşabilirsiniz.</p>
+
+        <button id="load-comments" class="btn btn-primary">Yorumları Göster</button>
+        <!-- Yorumlar burada yüklenecek -->
+        <div id="comments-wrap">
+
+<form method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/ahmetc74/my-blog/master/comments">
+  <input type="text" name="fields[name]" required>
+  <input type="email" name="fields[email]" required>
+  <textarea name="fields[message]" required></textarea>
+  <button type="submit">Gönder</button>
+</form></div>
+      </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-3" id="formKismi">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Bu Sayfa Hakkında</h5>
+              <p class="card-text text-center">Bu web sayfası, insan ve teknolojiyi bir araya getirme vizyonuyla tasarlanmıştır. Sorularınız veya önerileriniz varsa, <a href="mailto:ac426@aof.anadolu.edu.tr" class="link-primary">bana ulaşmak için bu linke</a>tıklayabilirsiniz. Chatgpt için <a href="https://openai.com/" class="link-primary">open ai web sitesini ziyaret edin</a>. </p>
+              <div class="text-center mt-4">
+                <i class="fas fa-envelope-open-text fa-2x"></i>
+                <p class="font-weight-bold mt-2">FORMU doldurarak Mesajınızı ekleyebilirsiniz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <form id="modalKullaniciFormu">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Ad</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="surname" class="form-label">Soyad</label>
+                  <input type="text" class="form-control" id="surname" name="surname" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mesaj (Maksimum 75 karakter)</label>
+                  <textarea class="form-control" id="message" name="message" rows="3" required maxlength="75" placeholder="Mesajınızı buraya yazın (maksimum 75 karakter)..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-auto">Gönder</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="row mt-3">
+        <div class="col">
+          <div class="card border-success">
+            <div class="card-body">
+              <h2 class="text-center card-title">Kullanılan Teknikler ve Teknolojiler</h2>
+              <p class="text-center">Bu web sayfasının oluşturulmasında aşağıdaki teknikler ve teknolojiler kullanılmıştır:</p>
+              <ul>
+                <li>
+                  <strong>HTML5:</strong>Sayfanın temel yapısını oluşturmak için kullanılmıştır.
+                </li>
+                <li>
+                  <strong>CSS3 ve Bootstrap 5:</strong>Sayfanın stilini ve duyarlı tasarımını sağlamak için kullanılmıştır.
+                </li>
+                <li>
+                  <strong>MySQL:</strong>Kullanıcı verilerini saklamak ve yönetmek için kullanılan ilişkisel veritabanı yönetim sistemidir.
+                </li>
+                <li>
+                  <strong>JavaScript ve jQuery:</strong>Dinamik içerikler ve kullanıcı etkileşimleri için kullanılmıştır.
+                </li>
+                <li>
+                  <strong>particles.js:</strong>Arka planda parçacık efektleri oluşturmak için kullanılmıştır. Bu kütüphane, ziyaretçilere görsel bir çekicilik katmak amacıyla kullanılmıştır.
+                </li>
+                <li>
+                  <strong>FontAwesome:</strong>İkonlar için kullanılmıştır.
+                </li>
+                <li>
+                  <strong>Google Fonts:</strong>Sayfa yazı tipleri için kullanılmıştır.
+                </li>
+                <li>
+                  <strong>Hyvor Talk:</strong>Yorum bölümü için bir üçüncü taraf hizmeti kullanılmıştır.
+                </li>
+                <li>
+                  <strong>PHP (örnek AJAX çağrıları için):</strong>Kullanıcı mesajlarını kaydetmek ve göstermek için kullanılan sunucu tarafı script dili.
+                </li>
+                <li>
+                  <strong>Responsive Tasarım:</strong>Sayfanın mobil ve tablet cihazlarda uygun görüntülenebilmesi için düzenlenmiştir.
+                </li>
+                <li>
+                  <strong>Bootstrap Modal ve Collapse Komponentleri:</strong>İçeriklerin modüler ve çökertilebilir şekilde sunulması için kullanılmıştır. Bu sayede kullanıcı deneyimi geliştirilmiştir.
+                </li>
+                <li>
+                  <strong>AJAX:</strong>Sayfa yenilenmeden veri alışverişini sağlamak için kullanılmıştır. Bu, örneğin, kullanıcı mesajlarının dinamik olarak kaydedilip gösterilmesi gibi işlemlerde kullanılmıştır.
+                </li>
+                <li>
+                  <strong>Scroll Efekti:</strong>Sayfa içindeki belirli bölümlere yumuşak geçişler sağlamak için jQuery'nin scroll özelliği kullanılmıştır.
+                </li>
+              </ul>
+              <p class="text-center">Bu teknolojiler ve efektler, kullanıcıya modern ve etkileşimli bir web deneyimi sunmak için bir araya getirilmiştir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer mt-3">
+        <h2>
+          Hocamız Hakkında
+        </h2>
+        <p>Can Güler hocamız, Anadolu Üniversitesi Eğitim Fakültesi Hayat Boyu Öğrenme ve Yetişkin Eğitimi bölümünde Dr. Öğretim Üyesi olarak görev almaktadır. <br>
+          <a href="https://avesis.anadolu.edu.tr/canguler" target="_blank">Daha fazla bilgi</a>.
+        </p>
+        <div>
+          <a href="https://twitter.com" aria-label="Simdilik  Boş" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://facebook.com" aria-label="Simdilik  Boş" target="_blank" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com"aria-label="Simdilik  Boşe" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous defer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous defer" > </script>
+<script>
+ // Ekran genişliğine göre koşullu preload
+  if (window.innerWidth <= 768) {
+    // Mobil cihazlar için optimize edilmiş resmi önceden yükle
+    var link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = 'ekampus_1_50.webp'; // Mobil için optimize edilmiş resim yolu
+    link.as = 'image';
+    document.head.appendChild(link);
+  } else {
+    // Masaüstü cihazlar için önceden yükle
+    var link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = 'ekampus_1200x548.webp'; // Masaüstü için resim yolu
+    link.as = 'image';
+    document.head.appendChild(link);
+  }
+
+
+
+
+$(document).ready(function() {
+    function initializeMarquee() {
+        $.ajax({
+            type: "GET",
+            url: "fetch_users.php",
+            dataType: "json",
+            success: function(data) {
+                data.reverse();
+                var content = '<div class="kayan-yazi-container">';
+                var firstMessage = data.find(user => user.id === 1);
+                if (firstMessage) {
+                    var formattedDate = new Date(firstMessage.olusturma_tarihi).toISOString().slice(0, 10);
+                    content += '<span class="kayan-yazi">' + firstMessage.kullanici_adi + ' ' + firstMessage.soyadi + ': ' + firstMessage.mesaji + ' (' + formattedDate + ')</span>';
+                }
+              data.forEach(function(user) {
+    var formattedDate = new Date(user.olusturma_tarihi).toISOString().slice(0, 10);
+    var userName = user.kullanici_adi.toUpperCase(); // Kullanıcı adını büyük harfe çevir
+    var userSurname = user.soyadi.toUpperCase(); // Kullanıcı soyadını büyük harfe çevir
+    var userMessage = user.mesaji.toUpperCase(); // Mesajı büyük harfe çevir
+    content += '<span class="kayan-yazi"><span class="kullanici-bilgisi">' + userName + ' ' + userSurname + '</span>: ' + userMessage + ' (' + formattedDate + ')</span>';
+              
+});
+
+                content += '</div> <i id="toggleIcon" class="fa-solid fa-toggle-off fa-2x" style="color: black;"></i>';
+                $('#kayanYaziBar').html(content);
+                adjustIconSize(); // İkon boyutunu ayarlamak için fonksiyonu çağır
+            },
+            error: function() {
+                $('#kayanYaziBar').html('<div class="error">Mesajlar yüklenirken bir hata oluştu.</div>');
+            }
+        });
+    }
+
+
+    function adjustIconSize() {
+        var newSize = $(window).width() <= 768 ? '35px' : '35px'; // Örnek olarak mobilde 20px, masaüstünde 32px
+        $('#toggleIcon').css('font-size', newSize);
+    }
+
+    $(window).resize(adjustIconSize); // Pencere boyutu değiştiğinde ikon boyutunu ayarla
+
+    var isOpen = true;
+    $('#kayanYaziBar').on('click', function() {
+        var $kayanYaziContainer = $(this).find('.kayan-yazi-container');
+        var $toggleIcon = $('#toggleIcon');
+
+        if (isOpen) {
+            $(this).animate({ width: '15%' }, 500);
+            $kayanYaziContainer.fadeTo(500, 0);
+            $toggleIcon.removeClass('fa-solid fa-toggle-off fa-2x').addClass('fa-solid fa-toggle-on fa-2x');
+        } else {
+            $(this).animate({ width: '100%' }, 500);
+            $kayanYaziContainer.fadeTo(500, 1);
+            $toggleIcon.removeClass('fa-solid fa-toggle-on fa-2x').addClass('fa-solid fa-toggle-off fa-2x');
+        }
+        isOpen = !isOpen;
+        adjustIconSize(); // İkon boyutunu ayarlamak için fonksiyonu çağır
+    });
+
+    $("#modalKullaniciFormu").submit(function(e) {
+    e.preventDefault();
+    var formData = $(this).serialize();
+    $.ajax({
+        type: "POST",
+        url: "save_user.php",
+        data: formData,
+        success: function(response) {
+            alert("Mesajınız kaydedildi: " + response);
+            initializeMarquee(); // Başarılı gönderim sonrası kayan yazıyı yeniden başlat
+            $("#modalKullaniciFormu").trigger("reset"); // Formu sıfırla
+        },
+        error: function(xhr) {
+            alert("Mesaj kaydedilirken bir hata oluştu: " + xhr.responseText);
+        }
+    });
+});
+
+
+    initializeMarquee(); // Marquee'yi başlat
+
+
+});
+/*document.getElementById('load-comments').onclick = function() {
+    // embed.js scriptini dinamik olarak yükle
+    const script = document.createElement("script");
+    script.src = "https://talk.hyvor.com/embed/embed.js";
+    script.async = true;
+    script.type = "module";
+    document.head.appendChild(script);
+
+    // <hyvor-talk-comments> elementini oluştur ve ayarla
+    const comments = document.createElement("hyvor-talk-comments");
+    comments.setAttribute('website-id', 10594);
+    comments.setAttribute('page-id', ''); // Eğer belirli bir sayfa için yorumları göstermek isterseniz, 'page-id' değerini ayarlayın
+    document.getElementById("comments-wrap").appendChild(comments);
+
+    // Butonu gizle
+    this.style.display = 'none';
+};*/
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.youtube-container').forEach(function(container) {
+        container.addEventListener('click', function() {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/' + container.dataset.id + '?autoplay=1&rel=0');
+            iframe.setAttribute('title', 'YouTube video player');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.classList.add('responsive-media');
+            container.innerHTML = '';
+            container.appendChild(iframe);
+        });
+    });
+});
+
+
+
+</script>
+  </body>
+</html>
